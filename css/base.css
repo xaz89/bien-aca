@@ -244,9 +244,9 @@ main {
 
 .grid__item-subtitle {
 	display: block;
-	margin: auto 0 0 0;
-	font-weight: 400;
-	font-size: 1.5em;
+	margin: auto;
+	font-weight: 700;
+	font-size: 2.5rem;
 	color: var(--item-subtitle);
 }
 
@@ -541,10 +541,10 @@ main {
 @media screen and (min-width: 50em) {
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(2,50vmax);
+		grid-template-columns: repeat(4,25vmax);
 	}
 	.grid__item {
-		height: 50vmax;
+		height: 25vmax;
 		width: 100%;
 	}
 	.grid__item-subtitle * {
@@ -564,7 +564,7 @@ main {
 		transition-delay: 0s;
 	}
 	.grid__item-title {
-		font-size: 6vw;
+		font-size: 2vw;
 	}
 	.grid__item-title--small {
 		font-size: 3vw;
@@ -572,4 +572,20 @@ main {
 	.grid__item-text {
 		margin-top: 2.5rem;
 	}
+}
+
+
+
+.hero {
+	background-color: #000;
+	height: 25vmax;
+	width: 100%;
+	color: #fff;
+	padding: 3vmax;
+}
+
+.hero h1 {
+	margin: auto;
+	color: #fff;
+	width: -moz-max-content;
 }
